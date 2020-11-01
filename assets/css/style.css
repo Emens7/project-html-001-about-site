@@ -60,6 +60,13 @@
 
 }
 
+.paragraph-left {
+    text-align: left;
+    margin: 20px;
+    font-size: 21px;
+
+}
+
 img {
     width: 100%;
     height: auto;
