@@ -1,0 +1,216 @@
+/*Grid kialakitás */
+
+
+.logo {grid-area: logo;}
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.cont1 {grid-area: cont1; }
+.cont2 {grid-area: cont2; }
+.cont3 {grid-area: cont3; }
+.footer {grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo logo logo menu menu menu menu menu menu'  
+    'main main main main main main main main main'
+    'cont1 cont1 cont1 cont2 cont2 cont2 cont3 cont3 cont3'
+    'footer footer footer footer footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #C71D30;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+/*Kisebb képernyő nézet*/
+
+@media only screen and (max-width: 600px) {
+
+.logo {grid-area: logo;}
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.cont1 {grid-area: cont1; }
+.cont2 {grid-area: cont2; }
+.cont3 {grid-area: cont3; }
+.footer {grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'logo logo logo logo'
+      'menu menu menu menu'
+      'main main main main'
+      'cont1 cont1 cont1 cont1'
+      'cont2 cont2 cont2 cont2'
+      'cont3 cont3 cont3 cont3'
+      'footer footer footer footer';
+      
+    grid-gap: 5px;
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*Dobozok*/
+
+.container-blog {
+    display: grid;
+    height: 350px;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    background-color: #C71D30;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    text-align: left;
+}
+
+.grid-box-foto {
+        display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:  #C71D30;
+    padding: 10px;
+    }
+    .grid-item {
+    background-color: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-box-foto {
+    grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-box-foto {
+    grid-template-columns: auto;
+    }
+}
+
+
+
+/*Elrendezési kivételek*/
+
+h1 {
+    font-size: 34px;
+}
+
+.h2s {
+     color: white; 
+    font-size: 34px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.head {
+    display: grid;
+    justify-content: start;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+
+
+/* Szinek betűk */
+
+.responsive {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+  
+  .responsive_sajat {
+    width: 80%;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+  }
+
+  /*Navigáció*/
+
+  /*navigácios gombok*/
+
+  .nav {
+    border: 0px solid LightGrey;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .nav a {
+    background: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    color:  #76232F;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    background:  gainsboro;
+    border: 1px solid ;
+    color:  #76232F;
+  }
+
+  .column {
+  color: whitesmoke
+}
+
+.grid-item {
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Vissza felülre gomb*/
+
+.button {
+    vertical-align:middle;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .button:hover {background-color:gainsboro}
+  
+  .button:active {
+    background-color: #76232F;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+
+  .footer-button {
+      text-align: right;
+      margin: 25px;
+  }
+
+  .top-btn {
+      color: #76232F;
+      font-weight: bold;
+  }
