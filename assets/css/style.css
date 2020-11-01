@@ -155,7 +155,7 @@ h1 {
 
   .nav {
     border: 0px solid LightGrey;
-    padding: 40px 0px;
+    padding: 4px 0px;
     position: relative;
     text-align: center;
     width: 100%;
@@ -169,7 +169,7 @@ h1 {
     color:  #76232F;
     display: inline-block;
     margin: 10px;
-    padding: 14px;
+    padding: 15px;
     text-decoration: none;
   }
   
@@ -179,46 +179,18 @@ h1 {
     color:  #76232F;
   }
 
-  .column {
-  color: whitesmoke
-}
-
 .grid-item {
     padding: 10px;
     margin: 10px;
 }
 
-/*Vissza felülre gomb*/
 
-.button {
-    vertical-align:middle;
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 14px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: black;
-    background-color: whitesmoke;
-    border: none;
-    border-radius: 5px;
-  }
+.button-back {
+    text-align: right;;
+    
+}
   
-  .button:hover {background-color:gainsboro}
   
-  .button:active {
-    background-color: #76232F;
-    box-shadow: 0 5px black;
-    transform: translateY(4px);
-  }
+  
 
-  .footer-button {
-      text-align: right;
-      margin: 25px;
-  }
-
-  .top-btn {
-      color: #76232F;
-      font-weight: bold;
-  }
+  
